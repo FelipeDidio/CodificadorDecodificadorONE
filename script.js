@@ -77,6 +77,6 @@ function copiarTexto() {
 }
 
 
-function escondeImagem() {
-  document.getElementById("escondeGarota").style.display = "none";
-}
+// function escondeImagem() {
+//   document.getElementById("escondeGarota").style.display = "none";
+// }
