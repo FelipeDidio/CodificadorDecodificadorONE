@@ -1,9 +1,10 @@
-let textArea = document.querySelector(".textArea");
-let mensagem = document.querySelector(".mensagem");
+let textArea = document.querySelector(".textArea"); // esquerda é o input-texto do lucas
+let mensagem = document.querySelector(".mensagem");  // direita  é o resultado do lucas
 
 const btnCopiar = document.querySelector(".btnCopiar");
-
 btnCopiar.onclick = copiarTexto;
+
+let meninaImg = document.querySelector('');
 
 // As "chaves" de criptografia que utilizaremos são:
 // A letra "e" é convertida para "enter"
@@ -13,6 +14,7 @@ btnCopiar.onclick = copiarTexto;
 // A letra "u" é convertida para "ufat"
 
 function btnCriptografar() {
+  
   let textoCriptografado = criptografar(textArea.value);
   mensagem.value = textoCriptografado;
   textArea.value = "";
@@ -45,6 +47,7 @@ function btnDescriptografar() {
   textArea.value = "";
 }
 
+
 function descriptografar(stringDescriptografada) {
   let matrizCodigo = [
     ["e", "enter"],
@@ -76,7 +79,6 @@ function copiarTexto() {
   textArea.focus();
 }
 
-
-// function escondeImagem() {
-//   document.getElementById("escondeGarota").style.display = "none";
-// }
+function escondeImagem() {
+  document.getElementById("escondeGarota").style.display = "none";
+}
